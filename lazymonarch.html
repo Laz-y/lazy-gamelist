@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>LazyMonarch</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="lazymonarch.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<!-- <div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
+  </div> -->
+
+  <!-- Navbar on small screens -->
+  <!-- <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div> -->
+
+<!-- Header -->
+<header class="w3-container w3-cyan w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Laz-y's Game List</h1>
+  <p class="w3-xlarge">Maplestory + Gacha Games</p>
+  <!-- <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button> -->
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-blue w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Maplestory</h1>
+      <h5 class="w3-padding-32">A very time intensive game, but also the only MMORPG in this list.</h5>
+
+      <p>Personally, I would not recommend anyone to play this game unless they have good self-control and are immune to FOMO. Constant events and time consuming dailies post level 200 bundled with the fact that you can create multiple characters (and are incentivised to do so) makes it a huge time sink.</p>
+      <span id="dots"></span>
+      <span id="more">
+      <p>If you do join, I recommend waiting for burning event where you gain an extra 2 levels when you level up (1+2).</p>
+      <ul>
+        <li>Mega-burners (up to lvl 150):
+        <p>
+          Can get from daily sign in reward and good for unlocking level 2 link skills
+        </p>
+        </li>
+        <li>Tera-burners (up to lvl 200):
+          <p> Good for unlocking SS legion blocks or level 3 link skills if you have growth pots for lvl 200+</p>
+        </li>
+        <li>*Hyper-burners (up to lvl 250/260):
+          <p>Good for making a new main or boss mule</p>
+        </li>
+      </ul>
+      <p>*Can only be used at character creation or lvl 200+</p>
+      <p>More About: <a href="https://maplestory.nexon.net/micro-site/59088/">Link Skills</a>  & <a href="https://maplestory.fandom.com/wiki/Legion_System">Legion</a></p>
+      <p>Coppersan's Zero to Hero Series: Season 1 (without burning) & Season 2 (with burning) </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=G_TIz35c-Q2ZL1Po&amp;list=PLBrJXQ1KEwzlkdg9jOiinsk0ruCm0GnMz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <p>My personal training route to 100 cuz I hate grinding is usually:</p>
+      <p>tutorial story > riena strait > gold beach till 75/78 > afterlands (usally past 100 by here) </p>
+      </span>
+      <button onclick="mapleMore()" id="maplemore" class="w3-button w3-aqua">Read more</button>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="images/maplestory.jpg" alt="maplestory">
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-blue w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img src="images/honkai.jpg" alt="honkai">
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Honkai Impact 3</h1>
+      <h5 class="w3-padding-32">Play for the story, unless you have a lot of money to spare.</h5>
+      <p>I used to be pretty competitive but being just a light spender could not make up for my skill issue as more complex game mechanics have been introduced into the game over the years along with longer boss fights which gives more room to screw up instead of constant short battles I could restart till I lucked out with a perfect run.</p>
+      <span id="dots1"></span>
+      <span id="more1" hidden>
+      <p>The story is great but it's pretty complex with bits and pieces thrown across different media such as manga and visual novels.</p>
+      <p>If you want to keep up-to-date with latest honkai news and guides, you probably would want to follow <a href="https://www.youtube.com/@MarisaHonkai">Marisa Honkai</a> and <a href="https://www.youtube.com/@Wyverein/videos">Wyverein</a>.</p>
+      </span>
+      <button onclick="honkaiMore()" id="honkaimore" class="w3-button w3-aqua">Read more</button>
+ 
+    </div>
+  </div>
+</div>
+
+<!-- <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+</div> -->
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-blue w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Honkai Star Rail</h1>
+      <h5 class="w3-padding-32">Turn-based games have never been this flashy.</h5>
+
+      <p>Very pretty and fun. Just don't get caught up in perfect relics and speed-tuning unless you hate yourself. Or unless you like that I guess. Dailies can be done pretty fast and if you have a properly geared team, you can just turn on auto-battle and do something else while waiting.</p>
+      <p>For guides I usually go to <a href="https://www.youtube.com/@guobacertified/featured">Guoba Certified</a> for character builds and <a href="https://www.youtube.com/@OkCodeTV/videos">OkCode</a> for some stuff.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="images/starrail.jpg" alt="starrail">
+    </div>
+  </div>
+</div>
+
+<!-- Fourth Grid -->
+<div class="w3-row-padding w3-light-blue w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img src="images/genshin.jpg" alt="genshin">
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Genshin Impact</h1>
+      <h5 class="w3-padding-32">Like open world? Give it a shot.</h5>
+
+      <p>I don't know why I still play this game, I'm so lazy to explore the new regions and just do my daily commissions and make sure my resin doesn't cap. My enhancement crystals and artefacts keep going over the limit and I need to upgrade random weapons and artefacts to use them up.</p>
+      <p>Apparently the story is pretty good now though, so I guess if you like open world exploration and a pretty good story you can try this game.</p>
+      <p>For guides and silly content, I usually watch <a href="https://www.youtube.com/@Zy0x">Zy0x.</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Fifth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-blue w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Aether Gazer</h1>
+      <h5 class="w3-padding-32">Fun combat, lovely art. </h5>
+
+      <p>One of the few games I actually don't mind playing on mobile. You can brute force most content with just 1 team. There's only 1 game mode that needs 3 teams and honestly you just need 3 solid dps characters and just pair them with some chain ultimate characters.</p>
+      <p>Not sure which spreadsheet is better but I often refer to one of these 2</p>
+      <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRxIwXQiYiK6hXzc5DeSAAwjNBweNdZ-acIrZAeG2l0Paa2yhooHal08nYCUmb-1zFAtS7ojiUx_gl1/pubhtml#">Spreadsheet Translated By RattenEros#0709</a>
+      <br>
+      <a href="https://docs.google.com/spreadsheets/d/141vpCoJwG0IImSw3HdUHKHxT334heo-KeX_5DlcKeLo/edit#gid=97636418">Vinhivici Spreadsheet</a>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="images/aethergazer.png" alt="aethergazer">
+    </div>
+  </div>
+</div>
+
+<!-- Sixth Grid -->
+<div class="w3-row-padding w3-light-blue w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img src="images/snowbreak.png" alt="snowbreak">
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Snowbreak: Containment Zone</h1>
+      <h5 class="w3-padding-32">First shooter gacha game I've ever come across.</h5>
+      <p>I spent most of my currency on the weapon banner. You really only need 2 well-built dps to clear everything. 4* Yao and 4* Sirius are great for helping you to survive if you have skill issue like me.</p>
+      <p>Not sure how reliable this is, but this is the only guide I found that is somewhat up-to-date (except the latest character). <a href="https://coda.io/@flux-kairos/snowbreak-containment-zone-beginners-guide">Guide By Flux Kairos.</a></p>
+      <p>For news and codes, I follow <a href="https://twitter.com/vicyush">Vicyush</a> on Twitter while I watch character and sometimes event guides by <a href="https://www.youtube.com/@Nonpon">Nonpon</a> on YouTube.</p>
+
+    </div>
+  </div>
+</div>
+
+<!-- Seventh Grid -->
+<div class="w3-row-padding w3-padding-64 w3-blue w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Blue Archive</h1>
+      <h5 class="w3-padding-32">Cute and funny.</h5>
+
+      <p>To be honest I just play the events and sweep stages daily. It's just a cute game I play on the side. I've heard that the story is actually really good though.</p>
+      <p>If you want a guideline for who to pull and what each character is good at, refer to this <a href="https://docs.google.com/spreadsheets/d/1BO-Uh_CsAOIetPjrNyFy9-7r1a4RAtVwK135bBC3hzM/edit#gid=1085051345">spreadsheet by Midokuni.</a> There are many tabs so take you time to look through them... Or just pull whoever you like.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="images/bluearchive.png" alt="bluearchive">
+    </div>
+  </div>
+</div>
+
+<!-- Eigth Grid -->
+<div class="w3-row-padding w3-light-blue w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img src="images/reverse1999.png" alt="reverse1999">
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Reverse 1999</h1>
+      <h5 class="w3-padding-32">Playing for the story.</h5>
+
+      <p>I really love the aesthetic of this game. The tutorials that teach you the mechanics can be hella difficult since one mess up means you fail but... you'll get it eventually (probably).</p>
+      <p>Since it's a new game, you shouldn't be too overwhelmed with a lot of content so it's best to start now!
+      </p>
+      <p>Only guide website I've come across for this is <a href="https://www.prydwen.gg/re1999/guides/">Prydwen</a>.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-cyan w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+ </div>
+ <p>Used a template from <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<!-- <script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script> -->
+<script src="lazymonarch.js"></script>
+
+</body>
+</html>
