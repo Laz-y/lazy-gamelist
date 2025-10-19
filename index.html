@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Game List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Game List</h1>
+    <nav>
+      <button class="tab-btn active" data-tab="active">Active</button>
+      <button class="tab-btn" data-tab="dropped">Dropped</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Active Games -->
+    <section id="active" class="tab-content active">
+    <h2 class="counter-text">Active Games (<span id="active-count">0</span>)</h2>
+
+        <div class="game-card">
+            <h2>Honkai Impact 3</h2>
+            <p>Status: <span class="status">Active</span></p>
+            <p>Activity Level: Story, Events, Dailies, Weeklies</p>
+            <p>Days Active: <span class="days-active" data-start="2019-04-13"></span></p>
+            <p>Favourite Resource: <a href="https://www.hoyolab.com/home">HoyoLab</a> & <a href="https://www.youtube.com/">YouTube</a> (boss references).</p>
+        </div>
+
+        <div class="game-card">
+            <h2>Honkai: Star Rail</h2>
+            <p>Status: <span class="status">Active</span></p>
+            <p>Activity Level: Story, Events, Dailies, Weeklies</p>
+            <p>Days Active: <span class="days-active" data-start="2023-04-26"></span></p>
+            <p>Favourite Content Creator: <a href="https://www.youtube.com/@guobacertified">Guoba  Certified</a></p>
+        </div>
+
+        <div class="game-card">
+            <h2>Snowbreak Containment Zone</h2>
+            <p>Status: <span class="status">Active</span></p>
+            <p>Activity Level: Story, Events, Dailies, Weeklies</p>
+            <p>Days Active: <span class="days-active" data-start="2023-07-20"></span></p>
+            <p>Favourite Content Creator: <a href="https://www.youtube.com/@ArchiveRisen">Archive Risen</a></p>
+        </div>
+
+        <div class="game-card">
+            <h2>Reverse 1999</h2>
+            <p>Status: <span class="status">Active</span></p>
+            <p>Days Active: <span class="days-active" data-start="2023-10-26"></span></p>
+            <p>Activity Level: Story, Events, Dailies, Weeklies</p>
+            <p>Favourite Resources: <a href="https://docs.google.com/spreadsheets/d/1e46cecjsIb1LO3Ybb6urlVUZKUk8R7yrgG9yXZS8-Ho/edit?gid=2100126761#gid=2100126761">General Guide</a> and <a href="https://docs.google.com/spreadsheets/u/0/d/1RW_8QqAyiIzuG0Zv0supj6aralSJsO1L3qVPYYxs_Og/htmlview?pli=1#gid=1569714732">Reveries P0 Clears</a></p>
+        </div>
+
+        <div class="game-card">
+            <h2>Wuthering Waves</h2>
+            <p>Status: <span class="status">Active</span></p>
+            <p>Activity Level: Story, Events, Dailies, Weeklies</p>
+            <p>Days Active: <span class="days-active" data-start="2024-05-23"></span></p>
+            <p>Favourite Resource: <a href="https://wutheringlab.com/">Wuthering Lab</a></p>
+        </div>
+
+        <div class="game-card">
+            <h2>Zenless Zone Zero</h2>
+            <p>Status: <span class="status">Active</span></p>
+            <p>Activity Level: Dailies Only</p>
+            <p>Days Active: <span class="days-active" data-start="2024-07-04"></span></p>
+            <p>Favourite Resource: NA</p>
+        </div>
+
+        <div class="game-card">
+            <h2>Heaven Burns Red</h2>
+            <p>Status: <span class="status">Active</span></p>
+            <p>Activity Level: Dailies, Weeklies</p>
+            <p>Days Active: <span class="days-active" data-start="2024-11-15"></span></p>
+            <p>Favourite Resource: <a href="docs.google.com/spreadsheets/d/e/2pacx-1vre8-r_xonaugguma_thbq4nguvco9dzpq5g9jhpbdotdtjxsdw5yt3jtekfos2xxzoyqitreexsycw/pubhtml#">Tojo Files</a></p>
+        </div>
+
+    </section>
+
+    <!-- Dropped Games -->
+    <section id="dropped" class="tab-content">
+      <div class="game-card">
+        <h2>Genshin Impact</h2>
+        <p>Status: <span class="status dropped">Dropped</span></p>
+        <p>Reason: I just got too overwhelmed and busy. It is not a very easy game to up-keep with it probably having the worst dailies unless you have enough encounter points (which I didn't). Dropped it during Natlan arc. But I may return in the future.</p>
+        <p>Favourite Content Creator: <a href="https://www.youtube.com/@Zy0x">Zy0x</a></p>
+      </div>
+
+      <div class="game-card">
+        <h2>Aether Gazer</h2>
+        <p>Status: <span class="status dropped">Dropped</span></p>
+        <p>Reason: It was fun and one of the few games I felt comfortable playing on mobile. All other games I strictly do PC unless I need to do dailies on the go. Unfortunately, events got a bit too complicated for me and I got busy so I dropped it.</p>
+        <p>Favourite Resources: <a href="https://www.reddit.com/user/gangrelion/submitted/">Gangrelion</a>, <a href="https://docs.google.com/spreadsheets/d/1a8kly9rZVLiLh2sr1--KpTFqiiM4x0qODgZ_11s3CXw/edit?gid=1160384366#gid=1160384366">Build Guide Spreadsheet</a>, <a href="https://docs.google.com/spreadsheets/d/1oGXOq3OTZU3s6C42SRht_G7l37GFunqn2oHqijuY8As/edit?rm=minimal&gid=638284445#gid=638284445">Roadmap</a></p>
+      </div>
+
+      <div class="game-card">
+        <h2>Black Beacon</h2>
+        <p>Status: <span class="status dropped">Dropped</span></p>
+        <p>Reason: Started at a bad time. Got busy too fast and didn't spend enough time on it to be particularly invested. Shortest time I've played a game.</p>
+        <p>Favourite Resource: None</p>
+      </div>
+
+      <div class="game-card">
+        <h2>Maplestory</h2>
+        <p>Status: <span class="status dropped">Dropped</span></p>
+        <p>Reason: Too time consuming and I hit a wall. The bosses I need to do to progress require partying up with others and I get social anxiety especially since the boss has mechanics that if I fail, the whole party gets fucked. Proud level 284 Kain main though.</p>
+        <p>Favourite Content Creators: <a href="https://www.youtube.com/@coppersan">Coppersan (Beginner Friendly)</a>, <a href="https://www.youtube.com/@Duky">Duky (End-Game)</a>, and <a href="https://www.youtube.com/@Essenia/videos">Essenia (boss min clears)</a></p>
+      </div>
+
+      <div class="game-card">
+        <h2>Blue Archive</h2>
+        <p>Status: <span class="status dropped">Dropped</span></p>
+        <p>Reason: Couldn't find time to play much of the story even though I heard it's really good. Just kept logging in every now and then for free pulls cause they are quite generous. Dropped cause I got auto logged out and forgot my account details. Also, wasn't that inclined to continue.</p>
+        <p>Favourite Resource: <a href="https://docs.google.com/spreadsheets/d/1BO-Uh_CsAOIetPjrNyFy9-7r1a4RAtVwK135bBC3hzM/edit?gid=2128322015#gid=2128322015">Midokuni's Student Insights</a></p>
+      </div>
+
+      <div class="game-card">
+        <h2>Punishing Gray Raven</h2>
+        <p>Status: <span class="status dropped">Dropped</span></p>
+        <p>Reason: Events too difficult and skill issue</p>
+        <p>Favourite Resource: <a href="https://grayravens.com/wiki/GRAY_RAVENS">Gray Ravens</a></p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Last updated: October 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

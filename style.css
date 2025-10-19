@@ -1,0 +1,94 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #0f1b2b, #14293d, #1c3a5f);
+  color: #e0e6f0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+header {
+  background: #1c3a5f;
+  color: #e0e6f0;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+.tab-btn {
+  background: #14293d;
+  color: #e0e6f0;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background: #3a7bd5;
+  color: #fff;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.game-card {
+  background: #14293d;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  margin-bottom: 1.2rem;
+}
+
+.status {
+  color: #59a6ff;
+  font-weight: 600;
+}
+
+.status.dropped {
+  color: #ff6b6b;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #a0b0c0;
+  padding: 1rem 0;
+}
+
+.counter-text {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+  color: #e0e6f0;
+}
+
+a {
+  color: #59a6ff;       /* bright blue for normal state */
+  text-decoration: none; /* remove underline for clean look */
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #a0c4ff;       /* lighter blue on hover */
+  text-decoration: underline; /* optional for hover feedback */
+}
